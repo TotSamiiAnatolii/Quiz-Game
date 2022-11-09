@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21G83" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="ActualQuestion" representedClassName="ActualQuestion" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="isAnswered" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="myAnswer" optional="YES" attributeType="String"/>
+        <relationship name="actualQuizSession" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ActualQuizSession" inverseName="actualAnswers" inverseEntity="ActualQuizSession"/>
+        <relationship name="question" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Question" inverseName="actualQuestion" inverseEntity="Question"/>
+    </entity>
+    <entity name="ActualQuizSession" representedClassName="ActualQuizSession" syncable="YES">
+        <attribute name="helpCount" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="startDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="actualAnswers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ActualQuestion" inverseName="actualQuizSession" inverseEntity="ActualQuestion"/>
+        <relationship name="categoryType" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CategoryType" inverseName="actualQuizSession" inverseEntity="CategoryType"/>
+    </entity>
+    <entity name="Category" representedClassName="Category" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="categoryType" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CategoryType" inverseName="category" inverseEntity="CategoryType"/>
+    </entity>
+    <entity name="CategoryForGame" representedClassName="CategoryForGame" syncable="YES">
+        <relationship name="category" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CategoryType" inverseName="categoryForGame" inverseEntity="CategoryType"/>
+    </entity>
+    <entity name="CategoryType" representedClassName="CategoryType" syncable="YES">
+        <attribute name="helpCount" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="isSelected" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="name" attributeType="String"/>
+        <relationship name="actualQuizSession" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ActualQuizSession" inverseName="categoryType" inverseEntity="ActualQuizSession"/>
+        <relationship name="category" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Category" inverseName="categoryType" inverseEntity="Category"/>
+        <relationship name="categoryForGame" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CategoryForGame" inverseName="category" inverseEntity="CategoryForGame"/>
+        <relationship name="question" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Question" inverseName="type" inverseEntity="Question"/>
+    </entity>
+    <entity name="Question" representedClassName="Question" syncable="YES">
+        <attribute name="answer" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromData" customClassName="[String]"/>
+        <attribute name="answerCorrect" attributeType="String"/>
+        <attribute name="help" attributeType="String"/>
+        <attribute name="isAnswer" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="myAnswer" attributeType="String"/>
+        <attribute name="photoQuestion" optional="YES" attributeType="Binary"/>
+        <attribute name="textQuestion" attributeType="String"/>
+        <relationship name="actualQuestion" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ActualQuestion" inverseName="question" inverseEntity="ActualQuestion"/>
+        <relationship name="type" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CategoryType" inverseName="question" inverseEntity="CategoryType"/>
+    </entity>
+    <elements>
+        <element name="ActualQuestion" positionX="-181.9650268554688" positionY="357.6829223632812" width="128" height="118"/>
+        <element name="ActualQuizSession" positionX="228.3093872070313" positionY="309.2886657714844" width="128" height="103"/>
+        <element name="Category" positionX="185.9528198242187" positionY="-71.14060974121094" width="128" height="73"/>
+        <element name="CategoryForGame" positionX="24.09429931640625" positionY="243.5750122070312" width="128" height="58"/>
+        <element name="CategoryType" positionX="23.68109130859369" positionY="-2.035293579101562" width="128" height="148"/>
+        <element name="Question" positionX="-156.2364501953125" positionY="83.26998901367188" width="128" height="178"/>
+    </elements>
+</model>

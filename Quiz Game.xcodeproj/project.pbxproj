@@ -1,0 +1,1543 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18053AC128C629DB008F1D6F /* correctAnswer.wav in Resources */ = {isa = PBXBuildFile; fileRef = 18053AC028C629DB008F1D6F /* correctAnswer.wav */; };
+		18053AC328C64623008F1D6F /* tapButton.wav in Resources */ = {isa = PBXBuildFile; fileRef = 18053AC228C64623008F1D6F /* tapButton.wav */; };
+		18053AC528C6632F008F1D6F /* noCorrectAnswer.wav in Resources */ = {isa = PBXBuildFile; fileRef = 18053AC428C6632E008F1D6F /* noCorrectAnswer.wav */; };
+		18053AC728C6679C008F1D6F /* Sounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18053AC628C6679C008F1D6F /* Sounds.swift */; };
+		18053ACA28C669C1008F1D6F /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18053AC928C669C1008F1D6F /* Colors.swift */; };
+		18053ACE28C689A8008F1D6F /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18053ACD28C689A8008F1D6F /* Image.swift */; };
+		18461D4528AA422200B8644F /* GameOverDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18461D4428AA422200B8644F /* GameOverDelegate.swift */; };
+		18461D4828AA8E6E00B8644F /* UILabel + setBoldCharecter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18461D4728AA8E6E00B8644F /* UILabel + setBoldCharecter.swift */; };
+		18461D4A28AA8EF000B8644F /* UItextView + setBoldText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18461D4928AA8EF000B8644F /* UItextView + setBoldText.swift */; };
+		18493E8428C0F32C004146AC /* LogicForGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18493E8328C0F32C004146AC /* LogicForGame.swift */; };
+		18493E8728C101BB004146AC /* ModelGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18493E8628C101BB004146AC /* ModelGameView.swift */; };
+		18493E8928C10293004146AC /* ConfigurableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18493E8828C10293004146AC /* ConfigurableView.swift */; };
+		18493E8B28C10485004146AC /* ModelQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18493E8A28C10485004146AC /* ModelQuestionView.swift */; };
+		18493E8D28C10586004146AC /* ModelMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18493E8C28C10586004146AC /* ModelMainView.swift */; };
+		18493E9028C10A57004146AC /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18493E8F28C10A57004146AC /* Enum.swift */; };
+		18493E9228C11091004146AC /* ModelSelectedCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18493E9128C11091004146AC /* ModelSelectedCategoryView.swift */; };
+		18493E9428C11522004146AC /* ModelGameOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18493E9328C11522004146AC /* ModelGameOverView.swift */; };
+		18493E9628C116FB004146AC /* ModelHelpPopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18493E9528C116FB004146AC /* ModelHelpPopUpView.swift */; };
+		18493E9828C12D2D004146AC /* ModelSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18493E9728C12D2D004146AC /* ModelSettingView.swift */; };
+		18493E9A28C12EE2004146AC /* ModelDetailSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18493E9928C12EE2004146AC /* ModelDetailSettingView.swift */; };
+		18493E9D28C130AC004146AC /* ModelSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18493E9C28C130AC004146AC /* ModelSetting.swift */; };
+		185DAC7C287DBA8000931A3A /* StatisticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185DAC7B287DBA8000931A3A /* StatisticViewController.swift */; };
+		185DAC7E287DBABB00931A3A /* StatisticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185DAC7D287DBABB00931A3A /* StatisticView.swift */; };
+		1860FE70287CC425008D6E28 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1860FE6F287CC425008D6E28 /* SettingViewController.swift */; };
+		1860FE72287CC44D008D6E28 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1860FE71287CC44D008D6E28 /* SettingView.swift */; };
+		1861F9A52891A1CA00AF449C /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1861F9A42891A1CA00AF449C /* QuestionView.swift */; };
+		1861F9A92891A25D00AF449C /* ContainerQuestionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1861F9A82891A25D00AF449C /* ContainerQuestionViewDataSource.swift */; };
+		1861F9AB2891A2B300AF449C /* QuestionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1861F9AA2891A2B300AF449C /* QuestionViewDelegate.swift */; };
+		1861F9AD2891B04C00AF449C /* ContainerQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1861F9AC2891B04C00AF449C /* ContainerQuestionView.swift */; };
+		1862091228CC8690002E4489 /* AppDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1862091128CC8690002E4489 /* AppDesign.swift */; };
+		1862091628CCD405002E4489 /* ModelDetailStatisticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1862091528CCD405002E4489 /* ModelDetailStatisticView.swift */; };
+		1862091828CCEDFE002E4489 /* ModelStatisticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1862091728CCEDFE002E4489 /* ModelStatisticView.swift */; };
+		18624DE4289C584A00BDF63B /* ContainerQuestionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18624DE3289C584A00BDF63B /* ContainerQuestionViewDelegate.swift */; };
+		1862D4952881FBB5001804BD /* UILabel + textColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1862D4942881FBB5001804BD /* UILabel + textColor.swift */; };
+		18632D3328C9D5F000BA3621 /* HistoryGameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18632D3228C9D5F000BA3621 /* HistoryGameCell.swift */; };
+		18632D3828C9E6FF00BA3621 /* DetailHistoryGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18632D3728C9E6FF00BA3621 /* DetailHistoryGameViewController.swift */; };
+		18632D3A28C9E72800BA3621 /* DetailHistoryGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18632D3928C9E72800BA3621 /* DetailHistoryGameView.swift */; };
+		18632D3D28C9E93E00BA3621 /* DetailHistoryGameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18632D3C28C9E93E00BA3621 /* DetailHistoryGameCell.swift */; };
+		18632D3F28C9EDEF00BA3621 /* DetailsGameHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18632D3E28C9EDEF00BA3621 /* DetailsGameHeaderView.swift */; };
+		18632D4228CA043100BA3621 /* ModelDetailStatistic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18632D4128CA043100BA3621 /* ModelDetailStatistic.swift */; };
+		18639E8328C763DD00351985 /* ModelGameOver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18639E8228C763DD00351985 /* ModelGameOver.swift */; };
+		18639E8628C7671E00351985 /* ModelGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18639E8528C7671E00351985 /* ModelGame.swift */; };
+		18639E8D28C779C400351985 /* ModelSelectedCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18639E8C28C779C400351985 /* ModelSelectedCategory.swift */; };
+		18639E9028C782D700351985 /* ModelStatistic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18639E8F28C782D700351985 /* ModelStatistic.swift */; };
+		1863C17C28804D73008BE5EA /* UIView + Round corners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1863C17B28804D73008BE5EA /* UIView + Round corners.swift */; };
+		1863C17F288055A4008BE5EA /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1863C17E288055A4008BE5EA /* CategoryCell.swift */; };
+		18642AF028D45FB40091831E /* Question.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18642AEE28D45FB40091831E /* Question.xcdatamodeld */; };
+		18642B0A28D489960091831E /* Category+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18642B0428D489960091831E /* Category+CoreDataClass.swift */; };
+		18642B0B28D489960091831E /* Category+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18642B0528D489960091831E /* Category+CoreDataProperties.swift */; };
+		18642B0C28D489960091831E /* Question+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18642B0628D489960091831E /* Question+CoreDataClass.swift */; };
+		18642B0D28D489960091831E /* Question+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18642B0728D489960091831E /* Question+CoreDataProperties.swift */; };
+		18642B1128D496730091831E /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18642B1028D496730091831E /* CoreDataManager.swift */; };
+		18650B0B28833B2D00F15011 /* HelpPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18650B0A28833B2D00F15011 /* HelpPopupView.swift */; };
+		186F97C728C92A53008D850B /* MainHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186F97C628C92A53008D850B /* MainHeaderView.swift */; };
+		1879F83728F6AF7400029E34 /* DetailGameSecondHeaderVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1879F83628F6AF7400029E34 /* DetailGameSecondHeaderVIew.swift */; };
+		187ACAFA287B120100C2D0B3 /* SelectedCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187ACAF9287B120100C2D0B3 /* SelectedCategoryViewController.swift */; };
+		187ACAFC287B183E00C2D0B3 /* SelectedCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187ACAFB287B183E00C2D0B3 /* SelectedCategoryView.swift */; };
+		187C6AAD28D6018800D34BFC /* UIStackView+ myStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187C6AAC28D6018800D34BFC /* UIStackView+ myStyle.swift */; };
+		187C6AAF28D6117C00D34BFC /* UILabel + MyStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187C6AAE28D6117C00D34BFC /* UILabel + MyStyle.swift */; };
+		187C6AB228D615E600D34BFC /* UIButton + MyStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187C6AB128D615E600D34BFC /* UIButton + MyStyles.swift */; };
+		187D4ED128F04E410075D025 /* DetailSettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187D4ED028F04E410075D025 /* DetailSettingCell.swift */; };
+		187D4ED328F05E080075D025 /* ModelDetailSettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187D4ED228F05E080075D025 /* ModelDetailSettingCell.swift */; };
+		187DA6CA290AC7E00087028B /* SelectedCategoryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187DA6C9290AC7E00087028B /* SelectedCategoryHeaderView.swift */; };
+		187DEAE028F1AFCD008BE551 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187DEADF28F1AFCD008BE551 /* UserDefaultsManager.swift */; };
+		187DEE4D28FAD2B600E7CD48 /* CategoryForGame+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187DEE4B28FAD2B600E7CD48 /* CategoryForGame+CoreDataClass.swift */; };
+		187DEE4E28FAD2B600E7CD48 /* CategoryForGame+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187DEE4C28FAD2B600E7CD48 /* CategoryForGame+CoreDataProperties.swift */; };
+		187E984828EC2D3E00E76231 /* ActualQuizSession+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E984628EC2D3E00E76231 /* ActualQuizSession+CoreDataClass.swift */; };
+		187E984928EC2D3E00E76231 /* ActualQuizSession+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E984728EC2D3E00E76231 /* ActualQuizSession+CoreDataProperties.swift */; };
+		187E986C28ECCFBD00E76231 /* CategoryType+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E986A28ECCFBD00E76231 /* CategoryType+CoreDataClass.swift */; };
+		187E986D28ECCFBD00E76231 /* CategoryType+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E986B28ECCFBD00E76231 /* CategoryType+CoreDataProperties.swift */; };
+		188A70BC2916D5F200F92BC3 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188A70BB2916D5F200F92BC3 /* HeaderView.swift */; };
+		188A70BF2916DC7A00F92BC3 /* DetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188A70BE2916DC7A00F92BC3 /* DetailHeaderView.swift */; };
+		188A70C12916DEB000F92BC3 /* DetailFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188A70C02916DEB000F92BC3 /* DetailFooterView.swift */; };
+		188C744929086B1F0098EA8D /* DetailHistoryGameDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188C744829086B1F0098EA8D /* DetailHistoryGameDataSource.swift */; };
+		188D539528DF47D30071448E /* ActualQuestion+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188D539128DF47D30071448E /* ActualQuestion+CoreDataClass.swift */; };
+		188D539628DF47D30071448E /* ActualQuestion+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188D539228DF47D30071448E /* ActualQuestion+CoreDataProperties.swift */; };
+		1897F2212913C3D100B74711 /* MyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1897F2202913C3D100B74711 /* MyButton.swift */; };
+		18A3C0B828D0E22900F4E5C1 /* ModelDetailSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A3C0B728D0E22900F4E5C1 /* ModelDetailSetting.swift */; };
+		18A3C0BD28D0F19400F4E5C1 /* StatisticDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A3C0BC28D0F19400F4E5C1 /* StatisticDelegate.swift */; };
+		18A3C0BF28D0F33200F4E5C1 /* SecondHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A3C0BE28D0F33200F4E5C1 /* SecondHeaderView.swift */; };
+		18A3C0C228D0FA2600F4E5C1 /* ModelSecondHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A3C0C128D0FA2600F4E5C1 /* ModelSecondHeaderView.swift */; };
+		18B43424287876DA000A8B49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B43423287876DA000A8B49 /* AppDelegate.swift */; };
+		18B43426287876DA000A8B49 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B43425287876DA000A8B49 /* SceneDelegate.swift */; };
+		18B43428287876DA000A8B49 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B43427287876DA000A8B49 /* GameViewController.swift */; };
+		18B4342D287876E0000A8B49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18B4342C287876E0000A8B49 /* Assets.xcassets */; };
+		18B43430287876E0000A8B49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B4342E287876E0000A8B49 /* LaunchScreen.storyboard */; };
+		18B4343B287876E0000A8B49 /* Quiz_GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B4343A287876E0000A8B49 /* Quiz_GameTests.swift */; };
+		18B43446287876E0000A8B49 /* Quiz_GameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B43445287876E0000A8B49 /* Quiz_GameUITests.swift */; };
+		18B43454287878C9000A8B49 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B43453287878C9000A8B49 /* MainViewController.swift */; };
+		18B43456287878EC000A8B49 /* GameOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B43455287878EC000A8B49 /* GameOverViewController.swift */; };
+		18B4345A28787963000A8B49 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B4345928787963000A8B49 /* MainView.swift */; };
+		18B4345C28787976000A8B49 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B4345B28787976000A8B49 /* GameView.swift */; };
+		18B4345E2878798D000A8B49 /* GameOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B4345D2878798D000A8B49 /* GameOverView.swift */; };
+		18B4346228788737000A8B49 /* ModelQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B4346128788737000A8B49 /* ModelQuestion.swift */; };
+		18BF0CB228F0795E0017E9D1 /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BF0CB128F0795E0017E9D1 /* SettingCell.swift */; };
+		CE56655628A9736E00713E82 /* DataQuestionGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE56655528A9736E00713E82 /* DataQuestionGame.swift */; };
+		CE56655928A9ACB100713E82 /* SelectViewControllerDataSourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE56655828A9ACB100713E82 /* SelectViewControllerDataSourse.swift */; };
+		CE6E15F228A0826600E510CA /* String +.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E15F128A0826500E510CA /* String +.swift */; };
+		CE6F970428A5A50600D317F5 /* DetailSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6F970328A5A50600D317F5 /* DetailSettingViewController.swift */; };
+		CE6F970628A5A56E00D317F5 /* DetailSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6F970528A5A56E00D317F5 /* DetailSettingView.swift */; };
+		CE722BB0290A43D500649808 /* SelectedCategoryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE722BAF290A43D500649808 /* SelectedCategoryDataSource.swift */; };
+		CE722BB2290A4E2900649808 /* StatisticDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE722BB1290A4E2900649808 /* StatisticDataSource.swift */; };
+		CE72667229151141008E511F /* SettingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE72667129151141008E511F /* SettingButton.swift */; };
+		CE72B98428D0AB6600EEF494 /* ModelMainHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE72B98328D0AB6600EEF494 /* ModelMainHeaderView.swift */; };
+		CE73974928EFF0F700339C63 /* UIImageView + MyStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE73974828EFF0F700339C63 /* UIImageView + MyStyle.swift */; };
+		CE8A9B7829185BF5004D6BEE /* SelectedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8A9B7729185BF5004D6BEE /* SelectedButton.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18B43437287876E0000A8B49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18B43418287876DA000A8B49 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18B4341F287876DA000A8B49;
+			remoteInfo = "Quiz Game";
+		};
+		18B43442287876E0000A8B49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18B43418287876DA000A8B49 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18B4341F287876DA000A8B49;
+			remoteInfo = "Quiz Game";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18053AC028C629DB008F1D6F /* correctAnswer.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = correctAnswer.wav; sourceTree = "<group>"; };
+		18053AC228C64623008F1D6F /* tapButton.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = tapButton.wav; sourceTree = "<group>"; };
+		18053AC428C6632E008F1D6F /* noCorrectAnswer.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = noCorrectAnswer.wav; sourceTree = "<group>"; };
+		18053AC628C6679C008F1D6F /* Sounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sounds.swift; sourceTree = "<group>"; };
+		18053AC928C669C1008F1D6F /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		18053ACD28C689A8008F1D6F /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		18461D4428AA422200B8644F /* GameOverDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverDelegate.swift; sourceTree = "<group>"; };
+		18461D4728AA8E6E00B8644F /* UILabel + setBoldCharecter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel + setBoldCharecter.swift"; sourceTree = "<group>"; };
+		18461D4928AA8EF000B8644F /* UItextView + setBoldText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UItextView + setBoldText.swift"; sourceTree = "<group>"; };
+		18493E8328C0F32C004146AC /* LogicForGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogicForGame.swift; sourceTree = "<group>"; };
+		18493E8628C101BB004146AC /* ModelGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelGameView.swift; sourceTree = "<group>"; };
+		18493E8828C10293004146AC /* ConfigurableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableView.swift; sourceTree = "<group>"; };
+		18493E8A28C10485004146AC /* ModelQuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelQuestionView.swift; sourceTree = "<group>"; };
+		18493E8C28C10586004146AC /* ModelMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelMainView.swift; sourceTree = "<group>"; };
+		18493E8F28C10A57004146AC /* Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
+		18493E9128C11091004146AC /* ModelSelectedCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelSelectedCategoryView.swift; sourceTree = "<group>"; };
+		18493E9328C11522004146AC /* ModelGameOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelGameOverView.swift; sourceTree = "<group>"; };
+		18493E9528C116FB004146AC /* ModelHelpPopUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelHelpPopUpView.swift; sourceTree = "<group>"; };
+		18493E9728C12D2D004146AC /* ModelSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelSettingView.swift; sourceTree = "<group>"; };
+		18493E9928C12EE2004146AC /* ModelDetailSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelDetailSettingView.swift; sourceTree = "<group>"; };
+		18493E9C28C130AC004146AC /* ModelSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelSetting.swift; sourceTree = "<group>"; };
+		185DAC7B287DBA8000931A3A /* StatisticViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticViewController.swift; sourceTree = "<group>"; };
+		185DAC7D287DBABB00931A3A /* StatisticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticView.swift; sourceTree = "<group>"; };
+		1860FE6F287CC425008D6E28 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		1860FE71287CC44D008D6E28 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		1861F9A42891A1CA00AF449C /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		1861F9A82891A25D00AF449C /* ContainerQuestionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerQuestionViewDataSource.swift; sourceTree = "<group>"; };
+		1861F9AA2891A2B300AF449C /* QuestionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewDelegate.swift; sourceTree = "<group>"; };
+		1861F9AC2891B04C00AF449C /* ContainerQuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerQuestionView.swift; sourceTree = "<group>"; };
+		1862091128CC8690002E4489 /* AppDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDesign.swift; sourceTree = "<group>"; };
+		1862091528CCD405002E4489 /* ModelDetailStatisticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelDetailStatisticView.swift; sourceTree = "<group>"; };
+		1862091728CCEDFE002E4489 /* ModelStatisticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelStatisticView.swift; sourceTree = "<group>"; };
+		18624DE3289C584A00BDF63B /* ContainerQuestionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerQuestionViewDelegate.swift; sourceTree = "<group>"; };
+		1862D4942881FBB5001804BD /* UILabel + textColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel + textColor.swift"; sourceTree = "<group>"; };
+		18632D3228C9D5F000BA3621 /* HistoryGameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryGameCell.swift; sourceTree = "<group>"; };
+		18632D3728C9E6FF00BA3621 /* DetailHistoryGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHistoryGameViewController.swift; sourceTree = "<group>"; };
+		18632D3928C9E72800BA3621 /* DetailHistoryGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHistoryGameView.swift; sourceTree = "<group>"; };
+		18632D3C28C9E93E00BA3621 /* DetailHistoryGameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHistoryGameCell.swift; sourceTree = "<group>"; };
+		18632D3E28C9EDEF00BA3621 /* DetailsGameHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsGameHeaderView.swift; sourceTree = "<group>"; };
+		18632D4128CA043100BA3621 /* ModelDetailStatistic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelDetailStatistic.swift; sourceTree = "<group>"; };
+		18639E8228C763DD00351985 /* ModelGameOver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelGameOver.swift; sourceTree = "<group>"; };
+		18639E8528C7671E00351985 /* ModelGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelGame.swift; sourceTree = "<group>"; };
+		18639E8C28C779C400351985 /* ModelSelectedCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelSelectedCategory.swift; sourceTree = "<group>"; };
+		18639E8F28C782D700351985 /* ModelStatistic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelStatistic.swift; sourceTree = "<group>"; };
+		1863C17B28804D73008BE5EA /* UIView + Round corners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Round corners.swift"; sourceTree = "<group>"; };
+		1863C17E288055A4008BE5EA /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		18642AEF28D45FB40091831E /* Question.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Question.xcdatamodel; sourceTree = "<group>"; };
+		18642B0428D489960091831E /* Category+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Category+CoreDataClass.swift"; sourceTree = "<group>"; };
+		18642B0528D489960091831E /* Category+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Category+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		18642B0628D489960091831E /* Question+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Question+CoreDataClass.swift"; sourceTree = "<group>"; };
+		18642B0728D489960091831E /* Question+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Question+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		18642B1028D496730091831E /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		18650B0A28833B2D00F15011 /* HelpPopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpPopupView.swift; sourceTree = "<group>"; };
+		186F97C628C92A53008D850B /* MainHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHeaderView.swift; sourceTree = "<group>"; };
+		1879F83628F6AF7400029E34 /* DetailGameSecondHeaderVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailGameSecondHeaderVIew.swift; sourceTree = "<group>"; };
+		187ACAF9287B120100C2D0B3 /* SelectedCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedCategoryViewController.swift; sourceTree = "<group>"; };
+		187ACAFB287B183E00C2D0B3 /* SelectedCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedCategoryView.swift; sourceTree = "<group>"; usesTabs = 0; };
+		187C6AAC28D6018800D34BFC /* UIStackView+ myStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+ myStyle.swift"; sourceTree = "<group>"; };
+		187C6AAE28D6117C00D34BFC /* UILabel + MyStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel + MyStyle.swift"; sourceTree = "<group>"; };
+		187C6AB128D615E600D34BFC /* UIButton + MyStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton + MyStyles.swift"; sourceTree = "<group>"; };
+		187D4ED028F04E410075D025 /* DetailSettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSettingCell.swift; sourceTree = "<group>"; };
+		187D4ED228F05E080075D025 /* ModelDetailSettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelDetailSettingCell.swift; sourceTree = "<group>"; };
+		187DA6C9290AC7E00087028B /* SelectedCategoryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedCategoryHeaderView.swift; sourceTree = "<group>"; };
+		187DEADF28F1AFCD008BE551 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		187DEE4B28FAD2B600E7CD48 /* CategoryForGame+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CategoryForGame+CoreDataClass.swift"; sourceTree = "<group>"; };
+		187DEE4C28FAD2B600E7CD48 /* CategoryForGame+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CategoryForGame+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		187E984628EC2D3E00E76231 /* ActualQuizSession+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ActualQuizSession+CoreDataClass.swift"; sourceTree = "<group>"; };
+		187E984728EC2D3E00E76231 /* ActualQuizSession+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ActualQuizSession+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		187E986A28ECCFBD00E76231 /* CategoryType+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CategoryType+CoreDataClass.swift"; sourceTree = "<group>"; };
+		187E986B28ECCFBD00E76231 /* CategoryType+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CategoryType+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		188A70BB2916D5F200F92BC3 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		188A70BE2916DC7A00F92BC3 /* DetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHeaderView.swift; sourceTree = "<group>"; };
+		188A70C02916DEB000F92BC3 /* DetailFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailFooterView.swift; sourceTree = "<group>"; };
+		188C744829086B1F0098EA8D /* DetailHistoryGameDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHistoryGameDataSource.swift; sourceTree = "<group>"; };
+		188D539128DF47D30071448E /* ActualQuestion+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ActualQuestion+CoreDataClass.swift"; sourceTree = "<group>"; };
+		188D539228DF47D30071448E /* ActualQuestion+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ActualQuestion+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		1897F2202913C3D100B74711 /* MyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyButton.swift; sourceTree = "<group>"; };
+		18A3C0B728D0E22900F4E5C1 /* ModelDetailSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelDetailSetting.swift; sourceTree = "<group>"; };
+		18A3C0BC28D0F19400F4E5C1 /* StatisticDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticDelegate.swift; sourceTree = "<group>"; };
+		18A3C0BE28D0F33200F4E5C1 /* SecondHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondHeaderView.swift; sourceTree = "<group>"; };
+		18A3C0C128D0FA2600F4E5C1 /* ModelSecondHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelSecondHeaderView.swift; sourceTree = "<group>"; };
+		18B43420287876DA000A8B49 /* Quiz Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quiz Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18B43423287876DA000A8B49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		18B43425287876DA000A8B49 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		18B43427287876DA000A8B49 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		18B4342C287876E0000A8B49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18B4342F287876E0000A8B49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18B43431287876E0000A8B49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18B43436287876E0000A8B49 /* Quiz GameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Quiz GameTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18B4343A287876E0000A8B49 /* Quiz_GameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz_GameTests.swift; sourceTree = "<group>"; };
+		18B4343C287876E0000A8B49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18B43441287876E0000A8B49 /* Quiz GameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Quiz GameUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18B43445287876E0000A8B49 /* Quiz_GameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz_GameUITests.swift; sourceTree = "<group>"; };
+		18B43447287876E0000A8B49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18B43453287878C9000A8B49 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		18B43455287878EC000A8B49 /* GameOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverViewController.swift; sourceTree = "<group>"; };
+		18B4345928787963000A8B49 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		18B4345B28787976000A8B49 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		18B4345D2878798D000A8B49 /* GameOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverView.swift; sourceTree = "<group>"; };
+		18B4346128788737000A8B49 /* ModelQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelQuestion.swift; sourceTree = "<group>"; };
+		18BF0CB128F0795E0017E9D1 /* SettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
+		CE56655528A9736E00713E82 /* DataQuestionGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataQuestionGame.swift; sourceTree = "<group>"; };
+		CE56655828A9ACB100713E82 /* SelectViewControllerDataSourse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectViewControllerDataSourse.swift; sourceTree = "<group>"; };
+		CE6E15F128A0826500E510CA /* String +.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String +.swift"; sourceTree = "<group>"; };
+		CE6F970328A5A50600D317F5 /* DetailSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSettingViewController.swift; sourceTree = "<group>"; };
+		CE6F970528A5A56E00D317F5 /* DetailSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSettingView.swift; sourceTree = "<group>"; };
+		CE722BAF290A43D500649808 /* SelectedCategoryDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedCategoryDataSource.swift; sourceTree = "<group>"; };
+		CE722BB1290A4E2900649808 /* StatisticDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticDataSource.swift; sourceTree = "<group>"; };
+		CE72667129151141008E511F /* SettingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingButton.swift; sourceTree = "<group>"; };
+		CE72B98328D0AB6600EEF494 /* ModelMainHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelMainHeaderView.swift; sourceTree = "<group>"; };
+		CE73974828EFF0F700339C63 /* UIImageView + MyStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView + MyStyle.swift"; sourceTree = "<group>"; };
+		CE8A9B7729185BF5004D6BEE /* SelectedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedButton.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18B4341D287876DA000A8B49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B43433287876E0000A8B49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B4343E287876E0000A8B49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18053ABF28C62994008F1D6F /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				18053AC028C629DB008F1D6F /* correctAnswer.wav */,
+				18053AC228C64623008F1D6F /* tapButton.wav */,
+				18053AC428C6632E008F1D6F /* noCorrectAnswer.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		18461D4628AA8E4A00B8644F /* UITextView+ */ = {
+			isa = PBXGroup;
+			children = (
+				18461D4928AA8EF000B8644F /* UItextView + setBoldText.swift */,
+			);
+			path = "UITextView+";
+			sourceTree = "<group>";
+		};
+		184671D228A23E6C00D8AE6F /* UIView+ */ = {
+			isa = PBXGroup;
+			children = (
+				1863C17B28804D73008BE5EA /* UIView + Round corners.swift */,
+			);
+			path = "UIView+";
+			sourceTree = "<group>";
+		};
+		184671D328A23E7900D8AE6F /* UILabel+ */ = {
+			isa = PBXGroup;
+			children = (
+				1862D4942881FBB5001804BD /* UILabel + textColor.swift */,
+				18461D4728AA8E6E00B8644F /* UILabel + setBoldCharecter.swift */,
+				187C6AAE28D6117C00D34BFC /* UILabel + MyStyle.swift */,
+			);
+			path = "UILabel+";
+			sourceTree = "<group>";
+		};
+		184671D428A23E8900D8AE6F /* String+ */ = {
+			isa = PBXGroup;
+			children = (
+				CE6E15F128A0826500E510CA /* String +.swift */,
+			);
+			path = "String+";
+			sourceTree = "<group>";
+		};
+		18493E8E28C10A4A004146AC /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				18493E8F28C10A57004146AC /* Enum.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		18493E9B28C1305F004146AC /* ModelSetting */ = {
+			isa = PBXGroup;
+			children = (
+				18493E9728C12D2D004146AC /* ModelSettingView.swift */,
+				18493E9C28C130AC004146AC /* ModelSetting.swift */,
+			);
+			path = ModelSetting;
+			sourceTree = "<group>";
+		};
+		18493E9E28C1312C004146AC /* ModelQuestion */ = {
+			isa = PBXGroup;
+			children = (
+				18B4346128788737000A8B49 /* ModelQuestion.swift */,
+			);
+			path = ModelQuestion;
+			sourceTree = "<group>";
+		};
+		1861F9A62891A20100AF449C /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				18A3C0B928D0E66B00F4E5C1 /* Constants */,
+				18493E8E28C10A4A004146AC /* Enum */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		1861F9A72891A20B00AF449C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				18A3C0BB28D0F14200F4E5C1 /* StatisticDelegate */,
+				18639E8A28C7796A00351985 /* ConfigurableView */,
+				18639E8928C7795800351985 /* GameOver */,
+				18639E8828C7713200351985 /* ContainerQuestion */,
+				18639E8728C7711900351985 /* LogicForGame */,
+				1861F9AA2891A2B300AF449C /* QuestionViewDelegate.swift */,
+				CE56655828A9ACB100713E82 /* SelectViewControllerDataSourse.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		18632D3128C9D5C800BA3621 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				18632D3228C9D5F000BA3621 /* HistoryGameCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		18632D3428C9E68400BA3621 /* DetailHistoryGame */ = {
+			isa = PBXGroup;
+			children = (
+				18632D3628C9E6A100BA3621 /* Controllers */,
+				18632D3528C9E69A00BA3621 /* Views */,
+				18632D4028CA03F800BA3621 /* Model */,
+			);
+			path = DetailHistoryGame;
+			sourceTree = "<group>";
+		};
+		18632D3528C9E69A00BA3621 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				18632D3928C9E72800BA3621 /* DetailHistoryGameView.swift */,
+				18632D3E28C9EDEF00BA3621 /* DetailsGameHeaderView.swift */,
+				1879F83628F6AF7400029E34 /* DetailGameSecondHeaderVIew.swift */,
+				18632D3B28C9E91000BA3621 /* Cell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		18632D3628C9E6A100BA3621 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				18632D3728C9E6FF00BA3621 /* DetailHistoryGameViewController.swift */,
+				188C744829086B1F0098EA8D /* DetailHistoryGameDataSource.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		18632D3B28C9E91000BA3621 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				18632D3C28C9E93E00BA3621 /* DetailHistoryGameCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		18632D4028CA03F800BA3621 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18632D4128CA043100BA3621 /* ModelDetailStatistic.swift */,
+				1862091528CCD405002E4489 /* ModelDetailStatisticView.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18639E6928C730F100351985 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				18B43423287876DA000A8B49 /* AppDelegate.swift */,
+				18B43425287876DA000A8B49 /* SceneDelegate.swift */,
+				18B43431287876E0000A8B49 /* Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		18639E6A28C7313F00351985 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				18639E6B28C7315200351985 /* Main */,
+				18639E7128C733F200351985 /* Game */,
+				18639E7428C734A900351985 /* GameOver */,
+				18639E6E28C7335300351985 /* SelectedCategory */,
+				18639E7A28C7364200351985 /* Setting */,
+				18639E7D28C7367D00351985 /* DetailSetting */,
+				18639E7728C7352400351985 /* Statistic */,
+				18632D3428C9E68400BA3621 /* DetailHistoryGame */,
+				187925CF28D79A10005D4828 /* HelpPopUp */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		18639E6B28C7315200351985 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				18639E6C28C7315C00351985 /* Controllers */,
+				18639E6D28C7316900351985 /* Views */,
+				18639E9128C7841F00351985 /* Model */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		18639E6C28C7315C00351985 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				18B43453287878C9000A8B49 /* MainViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		18639E6D28C7316900351985 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				18B4345928787963000A8B49 /* MainView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		18639E6E28C7335300351985 /* SelectedCategory */ = {
+			isa = PBXGroup;
+			children = (
+				18639E7028C7338600351985 /* Controllers */,
+				18639E6F28C7337F00351985 /* Views */,
+				18639E8B28C779A200351985 /* Model */,
+			);
+			path = SelectedCategory;
+			sourceTree = "<group>";
+		};
+		18639E6F28C7337F00351985 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				187ACAFB287B183E00C2D0B3 /* SelectedCategoryView.swift */,
+				187DA6C9290AC7E00087028B /* SelectedCategoryHeaderView.swift */,
+				1863C17D2880557B008BE5EA /* Cell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		18639E7028C7338600351985 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				187ACAF9287B120100C2D0B3 /* SelectedCategoryViewController.swift */,
+				CE722BAF290A43D500649808 /* SelectedCategoryDataSource.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		18639E7128C733F200351985 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				18639E7328C7340C00351985 /* Controllers */,
+				18639E7228C7340400351985 /* Views */,
+				18639E8428C7670800351985 /* Model */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		18639E7228C7340400351985 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				18B4345B28787976000A8B49 /* GameView.swift */,
+				1861F9AC2891B04C00AF449C /* ContainerQuestionView.swift */,
+				1861F9A42891A1CA00AF449C /* QuestionView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		18639E7328C7340C00351985 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				18B43427287876DA000A8B49 /* GameViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		18639E7428C734A900351985 /* GameOver */ = {
+			isa = PBXGroup;
+			children = (
+				18639E7628C734C100351985 /* Controllers */,
+				18639E7528C734BB00351985 /* Views */,
+				18639E8128C763C200351985 /* Model */,
+			);
+			path = GameOver;
+			sourceTree = "<group>";
+		};
+		18639E7528C734BB00351985 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				18B4345D2878798D000A8B49 /* GameOverView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		18639E7628C734C100351985 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				18B43455287878EC000A8B49 /* GameOverViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		18639E7728C7352400351985 /* Statistic */ = {
+			isa = PBXGroup;
+			children = (
+				18639E7928C7354B00351985 /* Controllers */,
+				18639E7828C7353800351985 /* Views */,
+				18639E8E28C782AF00351985 /* Model */,
+			);
+			path = Statistic;
+			sourceTree = "<group>";
+		};
+		18639E7828C7353800351985 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				185DAC7D287DBABB00931A3A /* StatisticView.swift */,
+				186F97C628C92A53008D850B /* MainHeaderView.swift */,
+				18A3C0BE28D0F33200F4E5C1 /* SecondHeaderView.swift */,
+				18632D3128C9D5C800BA3621 /* Cell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		18639E7928C7354B00351985 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				185DAC7B287DBA8000931A3A /* StatisticViewController.swift */,
+				CE722BB1290A4E2900649808 /* StatisticDataSource.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		18639E7A28C7364200351985 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				18639E7C28C7365200351985 /* Controllers */,
+				18639E7B28C7364D00351985 /* Views */,
+				18493E9B28C1305F004146AC /* ModelSetting */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		18639E7B28C7364D00351985 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1860FE71287CC44D008D6E28 /* SettingView.swift */,
+				188A70BB2916D5F200F92BC3 /* HeaderView.swift */,
+				189337AC290B04EB00D766DD /* Cell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		18639E7C28C7365200351985 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1860FE6F287CC425008D6E28 /* SettingViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		18639E7D28C7367D00351985 /* DetailSetting */ = {
+			isa = PBXGroup;
+			children = (
+				18639E7F28C736A800351985 /* Controllers */,
+				18639E7E28C7369100351985 /* Views */,
+				18639E9228C7846700351985 /* Model */,
+			);
+			path = DetailSetting;
+			sourceTree = "<group>";
+		};
+		18639E7E28C7369100351985 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CE6F970528A5A56E00D317F5 /* DetailSettingView.swift */,
+				188A70BE2916DC7A00F92BC3 /* DetailHeaderView.swift */,
+				188A70C02916DEB000F92BC3 /* DetailFooterView.swift */,
+				188A70BD2916DC0900F92BC3 /* Cell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		18639E7F28C736A800351985 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE6F970328A5A50600D317F5 /* DetailSettingViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		18639E8028C741DB00351985 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				1861F9A72891A20B00AF449C /* Protocols */,
+				1863C17A28804D3A008BE5EA /* Extension */,
+				1861F9A62891A20100AF449C /* Helper */,
+				18B43460287886E3000A8B49 /* Resources */,
+				18053ABF28C62994008F1D6F /* Sounds */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		18639E8128C763C200351985 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18493E9328C11522004146AC /* ModelGameOverView.swift */,
+				18639E8228C763DD00351985 /* ModelGameOver.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18639E8428C7670800351985 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18639E8528C7671E00351985 /* ModelGame.swift */,
+				18493E8628C101BB004146AC /* ModelGameView.swift */,
+				18493E8A28C10485004146AC /* ModelQuestionView.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18639E8728C7711900351985 /* LogicForGame */ = {
+			isa = PBXGroup;
+			children = (
+				18493E8328C0F32C004146AC /* LogicForGame.swift */,
+			);
+			path = LogicForGame;
+			sourceTree = "<group>";
+		};
+		18639E8828C7713200351985 /* ContainerQuestion */ = {
+			isa = PBXGroup;
+			children = (
+				18624DE3289C584A00BDF63B /* ContainerQuestionViewDelegate.swift */,
+				1861F9A82891A25D00AF449C /* ContainerQuestionViewDataSource.swift */,
+			);
+			path = ContainerQuestion;
+			sourceTree = "<group>";
+		};
+		18639E8928C7795800351985 /* GameOver */ = {
+			isa = PBXGroup;
+			children = (
+				18461D4428AA422200B8644F /* GameOverDelegate.swift */,
+			);
+			path = GameOver;
+			sourceTree = "<group>";
+		};
+		18639E8A28C7796A00351985 /* ConfigurableView */ = {
+			isa = PBXGroup;
+			children = (
+				18493E8828C10293004146AC /* ConfigurableView.swift */,
+			);
+			path = ConfigurableView;
+			sourceTree = "<group>";
+		};
+		18639E8B28C779A200351985 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18493E9128C11091004146AC /* ModelSelectedCategoryView.swift */,
+				18639E8C28C779C400351985 /* ModelSelectedCategory.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18639E8E28C782AF00351985 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18639E8F28C782D700351985 /* ModelStatistic.swift */,
+				1862091728CCEDFE002E4489 /* ModelStatisticView.swift */,
+				18A3C0C028D0F9CF00F4E5C1 /* ModelViewHeader */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18639E9128C7841F00351985 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18493E8C28C10586004146AC /* ModelMainView.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18639E9228C7846700351985 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18A3C0B728D0E22900F4E5C1 /* ModelDetailSetting.swift */,
+				18493E9928C12EE2004146AC /* ModelDetailSettingView.swift */,
+				187D4ED228F05E080075D025 /* ModelDetailSettingCell.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1863C17A28804D3A008BE5EA /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CE73974728EFF0CA00339C63 /* UIImageView+ */,
+				187C6AB028D615BB00D34BFC /* UIButton+ */,
+				187C6AAB28D6010000D34BFC /* UIStackView+ */,
+				18461D4628AA8E4A00B8644F /* UITextView+ */,
+				184671D228A23E6C00D8AE6F /* UIView+ */,
+				184671D328A23E7900D8AE6F /* UILabel+ */,
+				184671D428A23E8900D8AE6F /* String+ */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		1863C17D2880557B008BE5EA /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1863C17E288055A4008BE5EA /* CategoryCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		18642AF128D460530091831E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				187DEADE28F1AF16008BE551 /* UserDefaults */,
+				187925D428D79B02005D4828 /* DataForGame */,
+				187925D328D79AE7005D4828 /* CoreData */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		187925CF28D79A10005D4828 /* HelpPopUp */ = {
+			isa = PBXGroup;
+			children = (
+				187925D028D79A1B005D4828 /* View */,
+				187925D128D79A2A005D4828 /* Model */,
+			);
+			path = HelpPopUp;
+			sourceTree = "<group>";
+		};
+		187925D028D79A1B005D4828 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18650B0A28833B2D00F15011 /* HelpPopupView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		187925D128D79A2A005D4828 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18493E9528C116FB004146AC /* ModelHelpPopUpView.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		187925D328D79AE7005D4828 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				18642B1028D496730091831E /* CoreDataManager.swift */,
+				187DEE4B28FAD2B600E7CD48 /* CategoryForGame+CoreDataClass.swift */,
+				187DEE4C28FAD2B600E7CD48 /* CategoryForGame+CoreDataProperties.swift */,
+				187E984628EC2D3E00E76231 /* ActualQuizSession+CoreDataClass.swift */,
+				187E984728EC2D3E00E76231 /* ActualQuizSession+CoreDataProperties.swift */,
+				188D539128DF47D30071448E /* ActualQuestion+CoreDataClass.swift */,
+				188D539228DF47D30071448E /* ActualQuestion+CoreDataProperties.swift */,
+				18642B0628D489960091831E /* Question+CoreDataClass.swift */,
+				18642B0728D489960091831E /* Question+CoreDataProperties.swift */,
+				187E986A28ECCFBD00E76231 /* CategoryType+CoreDataClass.swift */,
+				187E986B28ECCFBD00E76231 /* CategoryType+CoreDataProperties.swift */,
+				18642B0428D489960091831E /* Category+CoreDataClass.swift */,
+				18642B0528D489960091831E /* Category+CoreDataProperties.swift */,
+				18642AEE28D45FB40091831E /* Question.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		187925D428D79B02005D4828 /* DataForGame */ = {
+			isa = PBXGroup;
+			children = (
+				CE56655528A9736E00713E82 /* DataQuestionGame.swift */,
+			);
+			path = DataForGame;
+			sourceTree = "<group>";
+		};
+		187C6AAB28D6010000D34BFC /* UIStackView+ */ = {
+			isa = PBXGroup;
+			children = (
+				187C6AAC28D6018800D34BFC /* UIStackView+ myStyle.swift */,
+			);
+			path = "UIStackView+";
+			sourceTree = "<group>";
+		};
+		187C6AB028D615BB00D34BFC /* UIButton+ */ = {
+			isa = PBXGroup;
+			children = (
+				187C6AB128D615E600D34BFC /* UIButton + MyStyles.swift */,
+				1897F2202913C3D100B74711 /* MyButton.swift */,
+				CE8A9B7729185BF5004D6BEE /* SelectedButton.swift */,
+				CE72667129151141008E511F /* SettingButton.swift */,
+			);
+			path = "UIButton+";
+			sourceTree = "<group>";
+		};
+		187DEADE28F1AF16008BE551 /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				187DEADF28F1AFCD008BE551 /* UserDefaultsManager.swift */,
+			);
+			path = UserDefaults;
+			sourceTree = "<group>";
+		};
+		188A70BD2916DC0900F92BC3 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				187D4ED028F04E410075D025 /* DetailSettingCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		189337AC290B04EB00D766DD /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				18BF0CB128F0795E0017E9D1 /* SettingCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		18A3C0B928D0E66B00F4E5C1 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				1862091128CC8690002E4489 /* AppDesign.swift */,
+				18053ACD28C689A8008F1D6F /* Image.swift */,
+				18053AC928C669C1008F1D6F /* Colors.swift */,
+				18053AC628C6679C008F1D6F /* Sounds.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		18A3C0BB28D0F14200F4E5C1 /* StatisticDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				18A3C0BC28D0F19400F4E5C1 /* StatisticDelegate.swift */,
+			);
+			path = StatisticDelegate;
+			sourceTree = "<group>";
+		};
+		18A3C0C028D0F9CF00F4E5C1 /* ModelViewHeader */ = {
+			isa = PBXGroup;
+			children = (
+				CE72B98328D0AB6600EEF494 /* ModelMainHeaderView.swift */,
+				18A3C0C128D0FA2600F4E5C1 /* ModelSecondHeaderView.swift */,
+			);
+			path = ModelViewHeader;
+			sourceTree = "<group>";
+		};
+		18B43417287876DA000A8B49 = {
+			isa = PBXGroup;
+			children = (
+				18B43422287876DA000A8B49 /* Quiz Game */,
+				18B43439287876E0000A8B49 /* Quiz GameTests */,
+				18B43444287876E0000A8B49 /* Quiz GameUITests */,
+				18B43421287876DA000A8B49 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18B43421287876DA000A8B49 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18B43420287876DA000A8B49 /* Quiz Game.app */,
+				18B43436287876E0000A8B49 /* Quiz GameTests.xctest */,
+				18B43441287876E0000A8B49 /* Quiz GameUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18B43422287876DA000A8B49 /* Quiz Game */ = {
+			isa = PBXGroup;
+			children = (
+				18639E6928C730F100351985 /* Application */,
+				18639E6A28C7313F00351985 /* Screens */,
+				18B4345F287886D2000A8B49 /* ModelForGame */,
+				18639E8028C741DB00351985 /* Library */,
+				18642AF128D460530091831E /* Services */,
+			);
+			path = "Quiz Game";
+			sourceTree = "<group>";
+		};
+		18B43439287876E0000A8B49 /* Quiz GameTests */ = {
+			isa = PBXGroup;
+			children = (
+				18B4343A287876E0000A8B49 /* Quiz_GameTests.swift */,
+				18B4343C287876E0000A8B49 /* Info.plist */,
+			);
+			path = "Quiz GameTests";
+			sourceTree = "<group>";
+		};
+		18B43444287876E0000A8B49 /* Quiz GameUITests */ = {
+			isa = PBXGroup;
+			children = (
+				18B43445287876E0000A8B49 /* Quiz_GameUITests.swift */,
+				18B43447287876E0000A8B49 /* Info.plist */,
+			);
+			path = "Quiz GameUITests";
+			sourceTree = "<group>";
+		};
+		18B4345F287886D2000A8B49 /* ModelForGame */ = {
+			isa = PBXGroup;
+			children = (
+				18493E9E28C1312C004146AC /* ModelQuestion */,
+			);
+			path = ModelForGame;
+			sourceTree = "<group>";
+		};
+		18B43460287886E3000A8B49 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				18B4342C287876E0000A8B49 /* Assets.xcassets */,
+				18B4342E287876E0000A8B49 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CE73974728EFF0CA00339C63 /* UIImageView+ */ = {
+			isa = PBXGroup;
+			children = (
+				CE73974828EFF0F700339C63 /* UIImageView + MyStyle.swift */,
+			);
+			path = "UIImageView+";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18B4341F287876DA000A8B49 /* Quiz Game */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18B4344A287876E0000A8B49 /* Build configuration list for PBXNativeTarget "Quiz Game" */;
+			buildPhases = (
+				18B4341C287876DA000A8B49 /* Sources */,
+				18B4341D287876DA000A8B49 /* Frameworks */,
+				18B4341E287876DA000A8B49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Quiz Game";
+			productName = "Quiz Game";
+			productReference = 18B43420287876DA000A8B49 /* Quiz Game.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18B43435287876E0000A8B49 /* Quiz GameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18B4344D287876E0000A8B49 /* Build configuration list for PBXNativeTarget "Quiz GameTests" */;
+			buildPhases = (
+				18B43432287876E0000A8B49 /* Sources */,
+				18B43433287876E0000A8B49 /* Frameworks */,
+				18B43434287876E0000A8B49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18B43438287876E0000A8B49 /* PBXTargetDependency */,
+			);
+			name = "Quiz GameTests";
+			productName = "Quiz GameTests";
+			productReference = 18B43436287876E0000A8B49 /* Quiz GameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		18B43440287876E0000A8B49 /* Quiz GameUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18B43450287876E0000A8B49 /* Build configuration list for PBXNativeTarget "Quiz GameUITests" */;
+			buildPhases = (
+				18B4343D287876E0000A8B49 /* Sources */,
+				18B4343E287876E0000A8B49 /* Frameworks */,
+				18B4343F287876E0000A8B49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18B43443287876E0000A8B49 /* PBXTargetDependency */,
+			);
+			name = "Quiz GameUITests";
+			productName = "Quiz GameUITests";
+			productReference = 18B43441287876E0000A8B49 /* Quiz GameUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18B43418287876DA000A8B49 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					18B4341F287876DA000A8B49 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					18B43435287876E0000A8B49 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 18B4341F287876DA000A8B49;
+					};
+					18B43440287876E0000A8B49 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 18B4341F287876DA000A8B49;
+					};
+				};
+			};
+			buildConfigurationList = 18B4341B287876DA000A8B49 /* Build configuration list for PBXProject "Quiz Game" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18B43417287876DA000A8B49;
+			productRefGroup = 18B43421287876DA000A8B49 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18B4341F287876DA000A8B49 /* Quiz Game */,
+				18B43435287876E0000A8B49 /* Quiz GameTests */,
+				18B43440287876E0000A8B49 /* Quiz GameUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18B4341E287876DA000A8B49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18053AC328C64623008F1D6F /* tapButton.wav in Resources */,
+				18B43430287876E0000A8B49 /* LaunchScreen.storyboard in Resources */,
+				18053AC528C6632F008F1D6F /* noCorrectAnswer.wav in Resources */,
+				18053AC128C629DB008F1D6F /* correctAnswer.wav in Resources */,
+				18B4342D287876E0000A8B49 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B43434287876E0000A8B49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B4343F287876E0000A8B49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18B4341C287876DA000A8B49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1861F9A52891A1CA00AF449C /* QuestionView.swift in Sources */,
+				1863C17F288055A4008BE5EA /* CategoryCell.swift in Sources */,
+				18B43428287876DA000A8B49 /* GameViewController.swift in Sources */,
+				18053ACA28C669C1008F1D6F /* Colors.swift in Sources */,
+				187D4ED128F04E410075D025 /* DetailSettingCell.swift in Sources */,
+				185DAC7E287DBABB00931A3A /* StatisticView.swift in Sources */,
+				CE72B98428D0AB6600EEF494 /* ModelMainHeaderView.swift in Sources */,
+				187DEE4E28FAD2B600E7CD48 /* CategoryForGame+CoreDataProperties.swift in Sources */,
+				18493E9A28C12EE2004146AC /* ModelDetailSettingView.swift in Sources */,
+				18461D4828AA8E6E00B8644F /* UILabel + setBoldCharecter.swift in Sources */,
+				CE8A9B7829185BF5004D6BEE /* SelectedButton.swift in Sources */,
+				CE73974928EFF0F700339C63 /* UIImageView + MyStyle.swift in Sources */,
+				186F97C728C92A53008D850B /* MainHeaderView.swift in Sources */,
+				CE6F970628A5A56E00D317F5 /* DetailSettingView.swift in Sources */,
+				18A3C0B828D0E22900F4E5C1 /* ModelDetailSetting.swift in Sources */,
+				185DAC7C287DBA8000931A3A /* StatisticViewController.swift in Sources */,
+				187E986C28ECCFBD00E76231 /* CategoryType+CoreDataClass.swift in Sources */,
+				18A3C0BF28D0F33200F4E5C1 /* SecondHeaderView.swift in Sources */,
+				187ACAFC287B183E00C2D0B3 /* SelectedCategoryView.swift in Sources */,
+				18493E8B28C10485004146AC /* ModelQuestionView.swift in Sources */,
+				18B4345C28787976000A8B49 /* GameView.swift in Sources */,
+				18624DE4289C584A00BDF63B /* ContainerQuestionViewDelegate.swift in Sources */,
+				18B43454287878C9000A8B49 /* MainViewController.swift in Sources */,
+				18B43424287876DA000A8B49 /* AppDelegate.swift in Sources */,
+				18639E8D28C779C400351985 /* ModelSelectedCategory.swift in Sources */,
+				188C744929086B1F0098EA8D /* DetailHistoryGameDataSource.swift in Sources */,
+				187DA6CA290AC7E00087028B /* SelectedCategoryHeaderView.swift in Sources */,
+				18053ACE28C689A8008F1D6F /* Image.swift in Sources */,
+				18642B1128D496730091831E /* CoreDataManager.swift in Sources */,
+				18493E9D28C130AC004146AC /* ModelSetting.swift in Sources */,
+				18642AF028D45FB40091831E /* Question.xcdatamodeld in Sources */,
+				18642B0A28D489960091831E /* Category+CoreDataClass.swift in Sources */,
+				18B4345A28787963000A8B49 /* MainView.swift in Sources */,
+				CE722BB2290A4E2900649808 /* StatisticDataSource.swift in Sources */,
+				CE6E15F228A0826600E510CA /* String +.swift in Sources */,
+				18639E9028C782D700351985 /* ModelStatistic.swift in Sources */,
+				CE722BB0290A43D500649808 /* SelectedCategoryDataSource.swift in Sources */,
+				18642B0D28D489960091831E /* Question+CoreDataProperties.swift in Sources */,
+				188D539528DF47D30071448E /* ActualQuestion+CoreDataClass.swift in Sources */,
+				18639E8628C7671E00351985 /* ModelGame.swift in Sources */,
+				18650B0B28833B2D00F15011 /* HelpPopupView.swift in Sources */,
+				187C6AB228D615E600D34BFC /* UIButton + MyStyles.swift in Sources */,
+				18B43426287876DA000A8B49 /* SceneDelegate.swift in Sources */,
+				188D539628DF47D30071448E /* ActualQuestion+CoreDataProperties.swift in Sources */,
+				1861F9A92891A25D00AF449C /* ContainerQuestionViewDataSource.swift in Sources */,
+				18B4345E2878798D000A8B49 /* GameOverView.swift in Sources */,
+				187E986D28ECCFBD00E76231 /* CategoryType+CoreDataProperties.swift in Sources */,
+				187DEE4D28FAD2B600E7CD48 /* CategoryForGame+CoreDataClass.swift in Sources */,
+				18493E9028C10A57004146AC /* Enum.swift in Sources */,
+				18493E9228C11091004146AC /* ModelSelectedCategoryView.swift in Sources */,
+				18642B0C28D489960091831E /* Question+CoreDataClass.swift in Sources */,
+				1860FE72287CC44D008D6E28 /* SettingView.swift in Sources */,
+				1861F9AD2891B04C00AF449C /* ContainerQuestionView.swift in Sources */,
+				18632D3F28C9EDEF00BA3621 /* DetailsGameHeaderView.swift in Sources */,
+				18632D3D28C9E93E00BA3621 /* DetailHistoryGameCell.swift in Sources */,
+				18493E8928C10293004146AC /* ConfigurableView.swift in Sources */,
+				18632D4228CA043100BA3621 /* ModelDetailStatistic.swift in Sources */,
+				18632D3828C9E6FF00BA3621 /* DetailHistoryGameViewController.swift in Sources */,
+				18493E8728C101BB004146AC /* ModelGameView.swift in Sources */,
+				1862091628CCD405002E4489 /* ModelDetailStatisticView.swift in Sources */,
+				18493E9628C116FB004146AC /* ModelHelpPopUpView.swift in Sources */,
+				187D4ED328F05E080075D025 /* ModelDetailSettingCell.swift in Sources */,
+				18461D4A28AA8EF000B8644F /* UItextView + setBoldText.swift in Sources */,
+				187ACAFA287B120100C2D0B3 /* SelectedCategoryViewController.swift in Sources */,
+				1862D4952881FBB5001804BD /* UILabel + textColor.swift in Sources */,
+				CE6F970428A5A50600D317F5 /* DetailSettingViewController.swift in Sources */,
+				1862091228CC8690002E4489 /* AppDesign.swift in Sources */,
+				18642B0B28D489960091831E /* Category+CoreDataProperties.swift in Sources */,
+				188A70BC2916D5F200F92BC3 /* HeaderView.swift in Sources */,
+				18632D3A28C9E72800BA3621 /* DetailHistoryGameView.swift in Sources */,
+				18BF0CB228F0795E0017E9D1 /* SettingCell.swift in Sources */,
+				1879F83728F6AF7400029E34 /* DetailGameSecondHeaderVIew.swift in Sources */,
+				1861F9AB2891A2B300AF449C /* QuestionViewDelegate.swift in Sources */,
+				18A3C0C228D0FA2600F4E5C1 /* ModelSecondHeaderView.swift in Sources */,
+				1862091828CCEDFE002E4489 /* ModelStatisticView.swift in Sources */,
+				18B4346228788737000A8B49 /* ModelQuestion.swift in Sources */,
+				18493E9428C11522004146AC /* ModelGameOverView.swift in Sources */,
+				188A70C12916DEB000F92BC3 /* DetailFooterView.swift in Sources */,
+				18B43456287878EC000A8B49 /* GameOverViewController.swift in Sources */,
+				187E984928EC2D3E00E76231 /* ActualQuizSession+CoreDataProperties.swift in Sources */,
+				187C6AAF28D6117C00D34BFC /* UILabel + MyStyle.swift in Sources */,
+				CE56655628A9736E00713E82 /* DataQuestionGame.swift in Sources */,
+				18A3C0BD28D0F19400F4E5C1 /* StatisticDelegate.swift in Sources */,
+				18632D3328C9D5F000BA3621 /* HistoryGameCell.swift in Sources */,
+				18461D4528AA422200B8644F /* GameOverDelegate.swift in Sources */,
+				18493E8D28C10586004146AC /* ModelMainView.swift in Sources */,
+				18639E8328C763DD00351985 /* ModelGameOver.swift in Sources */,
+				18493E8428C0F32C004146AC /* LogicForGame.swift in Sources */,
+				187E984828EC2D3E00E76231 /* ActualQuizSession+CoreDataClass.swift in Sources */,
+				188A70BF2916DC7A00F92BC3 /* DetailHeaderView.swift in Sources */,
+				187C6AAD28D6018800D34BFC /* UIStackView+ myStyle.swift in Sources */,
+				18053AC728C6679C008F1D6F /* Sounds.swift in Sources */,
+				CE72667229151141008E511F /* SettingButton.swift in Sources */,
+				1860FE70287CC425008D6E28 /* SettingViewController.swift in Sources */,
+				187DEAE028F1AFCD008BE551 /* UserDefaultsManager.swift in Sources */,
+				CE56655928A9ACB100713E82 /* SelectViewControllerDataSourse.swift in Sources */,
+				1897F2212913C3D100B74711 /* MyButton.swift in Sources */,
+				18493E9828C12D2D004146AC /* ModelSettingView.swift in Sources */,
+				1863C17C28804D73008BE5EA /* UIView + Round corners.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B43432287876E0000A8B49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B4343B287876E0000A8B49 /* Quiz_GameTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B4343D287876E0000A8B49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B43446287876E0000A8B49 /* Quiz_GameUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18B43438287876E0000A8B49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18B4341F287876DA000A8B49 /* Quiz Game */;
+			targetProxy = 18B43437287876E0000A8B49 /* PBXContainerItemProxy */;
+		};
+		18B43443287876E0000A8B49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18B4341F287876DA000A8B49 /* Quiz Game */;
+			targetProxy = 18B43442287876E0000A8B49 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		18B4342E287876E0000A8B49 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18B4342F287876E0000A8B49 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18B43448287876E0000A8B49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		18B43449287876E0000A8B49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18B4344B287876E0000A8B49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WF9NXXAU88;
+				INFOPLIST_FILE = "/Users/apple/Desktop/Работа/7.11/6.11/4.11/27.10/Отправить 16.10/Quiz Game/Quiz Game/Application/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "totsamiianatolii.Quiz-Game";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18B4344C287876E0000A8B49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WF9NXXAU88;
+				INFOPLIST_FILE = "/Users/apple/Desktop/Работа/7.11/6.11/4.11/27.10/Отправить 16.10/Quiz Game/Quiz Game/Application/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "totsamiianatolii.Quiz-Game";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		18B4344E287876E0000A8B49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Quiz GameTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "totsamiianatolii.Quiz-GameTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Quiz Game.app/Quiz Game";
+			};
+			name = Debug;
+		};
+		18B4344F287876E0000A8B49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Quiz GameTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "totsamiianatolii.Quiz-GameTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Quiz Game.app/Quiz Game";
+			};
+			name = Release;
+		};
+		18B43451287876E0000A8B49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Quiz GameUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "totsamiianatolii.Quiz-GameUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Quiz Game";
+			};
+			name = Debug;
+		};
+		18B43452287876E0000A8B49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Quiz GameUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "totsamiianatolii.Quiz-GameUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Quiz Game";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18B4341B287876DA000A8B49 /* Build configuration list for PBXProject "Quiz Game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18B43448287876E0000A8B49 /* Debug */,
+				18B43449287876E0000A8B49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18B4344A287876E0000A8B49 /* Build configuration list for PBXNativeTarget "Quiz Game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18B4344B287876E0000A8B49 /* Debug */,
+				18B4344C287876E0000A8B49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18B4344D287876E0000A8B49 /* Build configuration list for PBXNativeTarget "Quiz GameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18B4344E287876E0000A8B49 /* Debug */,
+				18B4344F287876E0000A8B49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18B43450287876E0000A8B49 /* Build configuration list for PBXNativeTarget "Quiz GameUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18B43451287876E0000A8B49 /* Debug */,
+				18B43452287876E0000A8B49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		18642AEE28D45FB40091831E /* Question.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				18642AEF28D45FB40091831E /* Question.xcdatamodel */,
+			);
+			currentVersion = 18642AEF28D45FB40091831E /* Question.xcdatamodel */;
+			path = Question.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 18B43418287876DA000A8B49 /* Project object */;
+}
