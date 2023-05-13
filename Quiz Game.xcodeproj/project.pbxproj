@@ -1374,12 +1374,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WF9NXXAU88;
-				INFOPLIST_FILE = "/Users/apple/Desktop/Работа/7.11/6.11/4.11/27.10/Отправить 16.10/Quiz Game/Quiz Game/Application/Info.plist";
+				INFOPLIST_FILE = "/Users/apple/Desktop/Quiz-Game/Quiz Game/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "totsamiianatolii.Quiz-Game";
+				PRODUCT_BUNDLE_IDENTIFIER = "totsamiianatolii.Quiz-Game1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1393,12 +1393,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WF9NXXAU88;
-				INFOPLIST_FILE = "/Users/apple/Desktop/Работа/7.11/6.11/4.11/27.10/Отправить 16.10/Quiz Game/Quiz Game/Application/Info.plist";
+				INFOPLIST_FILE = "/Users/apple/Desktop/Quiz-Game/Quiz Game/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "totsamiianatolii.Quiz-Game";
+				PRODUCT_BUNDLE_IDENTIFIER = "totsamiianatolii.Quiz-Game1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

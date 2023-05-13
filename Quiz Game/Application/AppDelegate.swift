@@ -20,7 +20,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
             } else {
                 UserDefaults.standard.set(true, forKey: "launchedBefore")
-
                 UserDefaultsManager.shared.firstLaunch()
                 CoreDataManager.shared.firstLaunch()
             }
